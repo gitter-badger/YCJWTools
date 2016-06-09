@@ -23,6 +23,7 @@
     [[FLEXManager sharedManager] showExplorer];
 #endif
     // Override point for customization after application launch.
+    [NSThread sleepForTimeInterval:2.0];
     return YES;
 }
 
