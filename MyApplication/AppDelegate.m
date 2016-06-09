@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#if DEBUG
+#import "FLEXManager.h"
+#endif
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+#if DEBUG
+    [[FLEXManager sharedManager] showExplorer];
+#endif
     // Override point for customization after application launch.
     return YES;
 }

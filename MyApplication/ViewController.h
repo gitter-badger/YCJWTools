@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *yczh;
+@property (weak, nonatomic) IBOutlet UITextField *ycmm;
+@property (weak, nonatomic) IBOutlet UIButton *login;
 
 @end
 
