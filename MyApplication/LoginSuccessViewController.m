@@ -24,6 +24,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _info.text = _uinfo;
     UIBarButtonItem *exit = [[UIBarButtonItem alloc]initWithTitle:@"注销登录" style:UIBarButtonItemStyleDone target:self action:@selector(logout)];
     [self.navigationItem setRightBarButtonItem:exit];
     // Do any additional setup after loading the view.

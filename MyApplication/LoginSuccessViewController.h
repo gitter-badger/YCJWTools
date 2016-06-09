@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginSuccessViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *info;
+@property (nonatomic) NSString *uinfo;
 @end

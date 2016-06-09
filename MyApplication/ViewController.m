@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "TFHpple.h"
+#import "LoginSuccessViewController.h"
 @interface ViewController ()<UITextFieldDelegate>
 
 @end
@@ -56,14 +57,22 @@
     
     
     NSURLSessionDataTask * dataTask =[defaultSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
+
         
         NSString *logData = [[NSString alloc] initWithData:data encoding:enc];
         NSLog(@"%@",logData);
-        NSString *usernameOrPwdWrong = @"<script language=javascript>alert('登陆失败!忘记密码请到院办初始化!'); </script>";
+        NSData *endata = [logData dataUsingEncoding:NSUTF8StringEncoding];
+        TFHpple *doc = [[TFHpple alloc] initWithHTMLData:endata];
+        NSArray *elements = [doc searchWithXPathQuery:@"//font"];
+        TFHppleElement *element = [elements objectAtIndex:17];
+        NSString *content = [element content];
+        NSLog(@"%@",content);
+
+               NSString *usernameOrPwdWrong = @"<script language=javascript>alert('登陆失败!忘记密码请到院办初始化!'); </script>";
         NSRange wrongObj=[logData rangeOfString:usernameOrPwdWrong options:NSCaseInsensitiveSearch];
         NSString *loginSuccess = @"学生密码修改";
         NSRange successObj=[logData rangeOfString:loginSuccess options:NSCaseInsensitiveSearch];
-        
+
         if (connectionError || data == nil|| successObj.length<=0)
         {
             if(wrongObj.length>0) {
@@ -87,7 +96,9 @@
                                                cancelButtonTitle:@"确认"
                                                otherButtonTitles:nil];
             [alt show];
-            [self performSegueWithIdentifier:@"loginSuccess" sender:self];
+            LoginSuccessViewController *lvc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"LoginSuccess"];
+            lvc.uinfo = content;
+            [self.navigationController pushViewController:lvc animated:YES];
         }
     }];
     [dataTask resume];
