@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcbb4bbe-14a4-4ea0-b495-5888820394a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/Assets.xcassets/Brand Assets.launchimage/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/TFHpple.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/TFHpple.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/TFHppleElement.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/TFHppleElement.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/XPathQuery.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/XPathQuery.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ClassTable.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ClassTable.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ScoreView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ScoreView.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyApplication.iml" afterPath="$PROJECT_DIR$/.idea/MyApplication.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyApplication.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/MyApplication.xcodeproj/project.pbxproj" />
@@ -36,31 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewController.m" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewController.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+            <state relative-caret-position="315">
+              <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginSuccessViewController.m" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginSuccessViewController.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="1878">
+              <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
               <folding>
-                <marker date="1465497697000" expanded="true" signature="0:156" ph="//..." />
-                <marker date="1465497697000" expanded="true" signature="238:240" ph="..." />
-                <marker date="1465497697000" expanded="true" signature="327:774" ph="{...}" />
-                <marker date="1465497697000" expanded="true" signature="633:688" ph="@{...}" />
-                <marker date="1465497697000" expanded="true" signature="795:1101" ph="{...}" />
-                <marker date="1465497697000" expanded="true" signature="1135:1230" ph="{...}" />
-                <marker date="1465497697000" expanded="true" signature="1247:1313" ph="{...}" />
-                <marker date="1465497697000" expanded="true" signature="1315:10686" ph="/.../" />
-                <marker date="1465497697000" expanded="true" signature="10688:11032" ph="/.../" />
+                <marker date="1465650084000" expanded="true" signature="19258:19260" ph="/.../" />
               </folding>
             </state>
           </provider>
@@ -74,8 +63,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m" />
         <option value="$PROJECT_DIR$/MyApplication/ViewController.m" />
+        <option value="$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m" />
       </list>
     </option>
   </component>
@@ -116,9 +105,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" />
@@ -163,10 +157,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.MyApplication">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyApplication" TARGET_NAME="MyApplication" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MyApplication" RUN_TARGET_NAME="MyApplication" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -188,6 +185,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -219,6 +222,14 @@
       <option name="presentableId" value="Default" />
       <updated>1465405707935</updated>
     </task>
+    <task id="LOCAL-00001" summary="更新了一些功能">
+      <created>1465498063592</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1465498063592</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -235,11 +246,11 @@
     <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -265,11 +276,35 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新了一些功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了一些功能" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <marker date="1465650084000" expanded="true" signature="19258:19260" ph="/.../" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -283,15 +318,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1465497697000" expanded="true" signature="0:156" ph="//..." />
-            <marker date="1465497697000" expanded="true" signature="238:240" ph="..." />
-            <marker date="1465497697000" expanded="true" signature="327:774" ph="{...}" />
-            <marker date="1465497697000" expanded="true" signature="633:688" ph="@{...}" />
-            <marker date="1465497697000" expanded="true" signature="795:1101" ph="{...}" />
-            <marker date="1465497697000" expanded="true" signature="1135:1230" ph="{...}" />
-            <marker date="1465497697000" expanded="true" signature="1247:1313" ph="{...}" />
-            <marker date="1465497697000" expanded="true" signature="1315:10686" ph="/.../" />
-            <marker date="1465497697000" expanded="true" signature="10688:11032" ph="/.../" />
+            <marker date="1465650084000" expanded="true" signature="19258:19260" ph="/.../" />
           </folding>
         </state>
       </provider>
@@ -316,33 +343,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="1878">
+          <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
           <folding>
-            <marker date="1465497697000" expanded="true" signature="0:156" ph="//..." />
-            <marker date="1465497697000" expanded="true" signature="238:240" ph="..." />
-            <marker date="1465497697000" expanded="true" signature="327:774" ph="{...}" />
-            <marker date="1465497697000" expanded="true" signature="633:688" ph="@{...}" />
-            <marker date="1465497697000" expanded="true" signature="795:1101" ph="{...}" />
-            <marker date="1465497697000" expanded="true" signature="1135:1230" ph="{...}" />
-            <marker date="1465497697000" expanded="true" signature="1247:1313" ph="{...}" />
-            <marker date="1465497697000" expanded="true" signature="1315:10686" ph="/.../" />
-            <marker date="1465497697000" expanded="true" signature="10688:11032" ph="/.../" />
+            <marker date="1465650084000" expanded="true" signature="19258:19260" ph="/.../" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>

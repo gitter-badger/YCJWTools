@@ -16,6 +16,8 @@
 		B418B6981D02625900E16A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B418B6961D02625900E16A85 /* LaunchScreen.storyboard */; };
 		B418B6A31D02625A00E16A85 /* MyApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B418B6A21D02625A00E16A85 /* MyApplicationTests.m */; };
 		B418B6AE1D02625A00E16A85 /* MyApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B418B6AD1D02625A00E16A85 /* MyApplicationUITests.m */; };
+		B42B3BDC1D0A7D5F007F66A8 /* ClassTable.m in Sources */ = {isa = PBXBuildFile; fileRef = B42B3BDB1D0A7D5F007F66A8 /* ClassTable.m */; };
+		B4B0F7DC1D0C42E100BF0C1C /* ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B0F7DB1D0C42E100BF0C1C /* ScoreView.m */; };
 		B4CD844A1D09D3BE00DAC959 /* LoginSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CD84491D09D3BE00DAC959 /* LoginSuccessViewController.m */; };
 		B4CD84511D09E30C00DAC959 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CD844C1D09E30C00DAC959 /* TFHpple.m */; };
 		B4CD84521D09E30C00DAC959 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CD844E1D09E30C00DAC959 /* TFHppleElement.m */; };
@@ -59,6 +61,10 @@
 		B418B6A91D02625A00E16A85 /* MyApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B418B6AD1D02625A00E16A85 /* MyApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyApplicationUITests.m; sourceTree = "<group>"; };
 		B418B6AF1D02625A00E16A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42B3BDA1D0A7D5F007F66A8 /* ClassTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTable.h; sourceTree = "<group>"; };
+		B42B3BDB1D0A7D5F007F66A8 /* ClassTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTable.m; sourceTree = "<group>"; };
+		B4B0F7DA1D0C42E100BF0C1C /* ScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreView.h; sourceTree = "<group>"; };
+		B4B0F7DB1D0C42E100BF0C1C /* ScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreView.m; sourceTree = "<group>"; };
 		B4CD84481D09D3BE00DAC959 /* LoginSuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSuccessViewController.h; sourceTree = "<group>"; };
 		B4CD84491D09D3BE00DAC959 /* LoginSuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSuccessViewController.m; sourceTree = "<group>"; };
 		B4CD844B1D09E30C00DAC959 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
@@ -184,6 +190,8 @@
 		B418B6BB1D02626300E16A85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B42B3BDA1D0A7D5F007F66A8 /* ClassTable.h */,
+				B42B3BDB1D0A7D5F007F66A8 /* ClassTable.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -202,6 +210,8 @@
 				B418B68F1D02625900E16A85 /* ViewController.m */,
 				B4CD84481D09D3BE00DAC959 /* LoginSuccessViewController.h */,
 				B4CD84491D09D3BE00DAC959 /* LoginSuccessViewController.m */,
+				B4B0F7DA1D0C42E100BF0C1C /* ScoreView.h */,
+				B4B0F7DB1D0C42E100BF0C1C /* ScoreView.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -417,7 +427,9 @@
 				B4CD84531D09E30C00DAC959 /* XPathQuery.m in Sources */,
 				B4CD84511D09E30C00DAC959 /* TFHpple.m in Sources */,
 				B4CD844A1D09D3BE00DAC959 /* LoginSuccessViewController.m in Sources */,
+				B4B0F7DC1D0C42E100BF0C1C /* ScoreView.m in Sources */,
 				B418B6901D02625900E16A85 /* ViewController.m in Sources */,
+				B42B3BDC1D0A7D5F007F66A8 /* ClassTable.m in Sources */,
 				B418B68D1D02625900E16A85 /* AppDelegate.m in Sources */,
 				B418B68A1D02625900E16A85 /* main.m in Sources */,
 			);
@@ -561,7 +573,6 @@
 			baseConfigurationReference = 335D31BABF97FED535F92CB2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -583,7 +594,6 @@
 			baseConfigurationReference = E7ABD8D3F744E81F2D692227 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				EXCLUDED_SOURCE_FILE_NAMES = "FLEX*";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

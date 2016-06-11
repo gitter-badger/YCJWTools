@@ -10,5 +10,8 @@
 
 @interface LoginSuccessViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *info;
+@property (weak, nonatomic) IBOutlet UIButton *score;
+@property (weak, nonatomic) IBOutlet UIButton *classtable;
 @property (nonatomic) NSString *uinfo;
+@property (nonatomic) NSURLSession *session;
 @end
