@@ -16,6 +16,11 @@
 		B418B6981D02625900E16A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B418B6961D02625900E16A85 /* LaunchScreen.storyboard */; };
 		B418B6A31D02625A00E16A85 /* MyApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B418B6A21D02625A00E16A85 /* MyApplicationTests.m */; };
 		B418B6AE1D02625A00E16A85 /* MyApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B418B6AD1D02625A00E16A85 /* MyApplicationUITests.m */; };
+		B493F92D1D0D2CE100C3F1F1 /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B493F92B1D0D2CE100C3F1F1 /* ClassTableViewCell.m */; };
+		B493F92E1D0D2CE100C3F1F1 /* ClassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B493F92C1D0D2CE100C3F1F1 /* ClassTableViewCell.xib */; };
+		B493F9301D0D582200C3F1F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B493F92F1D0D582200C3F1F1 /* Foundation.framework */; };
+		B493F9321D0D582900C3F1F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B493F9311D0D582900C3F1F1 /* UIKit.framework */; };
+		B493F9341D0D583200C3F1F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B493F9331D0D583200C3F1F1 /* CoreGraphics.framework */; };
 		B4B0F7DF1D0C49EB00BF0C1C /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B0F7DE1D0C49EB00BF0C1C /* ScoreViewController.m */; };
 		B4B0F7E31D0C4FCF00BF0C1C /* ScoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B0F7E11D0C4FCF00BF0C1C /* ScoreTableViewCell.m */; };
 		B4B0F7E41D0C4FCF00BF0C1C /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4B0F7E21D0C4FCF00BF0C1C /* ScoreTableViewCell.xib */; };
@@ -26,6 +31,7 @@
 		B4CD84521D09E30C00DAC959 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CD844E1D09E30C00DAC959 /* TFHppleElement.m */; };
 		B4CD84531D09E30C00DAC959 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CD84501D09E30C00DAC959 /* XPathQuery.m */; };
 		B4CD849D1D09E45B00DAC959 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CD84591D09E3C400DAC959 /* libxml2.2.dylib */; };
+		B4D5D59C1D0D0B2300202491 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D5D59B1D0D0B2300202491 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,12 @@
 		B418B6A91D02625A00E16A85 /* MyApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B418B6AD1D02625A00E16A85 /* MyApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyApplicationUITests.m; sourceTree = "<group>"; };
 		B418B6AF1D02625A00E16A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B493F92A1D0D2CE100C3F1F1 /* ClassTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewCell.h; sourceTree = "<group>"; };
+		B493F92B1D0D2CE100C3F1F1 /* ClassTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewCell.m; sourceTree = "<group>"; };
+		B493F92C1D0D2CE100C3F1F1 /* ClassTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassTableViewCell.xib; sourceTree = "<group>"; };
+		B493F92F1D0D582200C3F1F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B493F9311D0D582900C3F1F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B493F9331D0D583200C3F1F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B4B0F7DD1D0C49EB00BF0C1C /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
 		B4B0F7DE1D0C49EB00BF0C1C /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
 		B4B0F7E01D0C4FCF00BF0C1C /* ScoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreTableViewCell.h; sourceTree = "<group>"; };
@@ -83,6 +95,7 @@
 		B4CD84551D09E33C00DAC959 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		B4CD84571D09E35D00DAC959 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		B4CD84591D09E3C400DAC959 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = ../../../../usr/lib/libxml2.2.dylib; sourceTree = "<group>"; };
+		B4D5D59B1D0D0B2300202491 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E7ABD8D3F744E81F2D692227 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B493F9341D0D583200C3F1F1 /* CoreGraphics.framework in Frameworks */,
+				B493F9321D0D582900C3F1F1 /* UIKit.framework in Frameworks */,
+				B493F9301D0D582200C3F1F1 /* Foundation.framework in Frameworks */,
+				B4D5D59C1D0D0B2300202491 /* Social.framework in Frameworks */,
 				B4CD849D1D09E45B00DAC959 /* libxml2.2.dylib in Frameworks */,
 				4C86E1E88E7CADE2B64EC6C1 /* libPods.a in Frameworks */,
 			);
@@ -125,6 +142,10 @@
 		7A9F6541303CE3BD87579231 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B493F9331D0D583200C3F1F1 /* CoreGraphics.framework */,
+				B493F9311D0D582900C3F1F1 /* UIKit.framework */,
+				B493F92F1D0D582200C3F1F1 /* Foundation.framework */,
+				B4D5D59B1D0D0B2300202491 /* Social.framework */,
 				B4CD84591D09E3C400DAC959 /* libxml2.2.dylib */,
 				B4CD84571D09E35D00DAC959 /* libxml2.2.tbd */,
 				B4CD84551D09E33C00DAC959 /* libxml2.tbd */,
@@ -204,6 +225,9 @@
 		B418B6BC1D02626B00E16A85 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B493F92A1D0D2CE100C3F1F1 /* ClassTableViewCell.h */,
+				B493F92B1D0D2CE100C3F1F1 /* ClassTableViewCell.m */,
+				B493F92C1D0D2CE100C3F1F1 /* ClassTableViewCell.xib */,
 				B4B0F7E01D0C4FCF00BF0C1C /* ScoreTableViewCell.h */,
 				B4B0F7E11D0C4FCF00BF0C1C /* ScoreTableViewCell.m */,
 				B4B0F7E21D0C4FCF00BF0C1C /* ScoreTableViewCell.xib */,
@@ -323,6 +347,7 @@
 				TargetAttributes = {
 					B418B6841D02625900E16A85 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VC58Q8KGG5;
 					};
 					B418B69D1D02625A00E16A85 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -359,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B493F92E1D0D2CE100C3F1F1 /* ClassTableViewCell.xib in Resources */,
 				B418B6981D02625900E16A85 /* LaunchScreen.storyboard in Resources */,
 				B418B6951D02625900E16A85 /* Assets.xcassets in Resources */,
 				B4B0F7E41D0C4FCF00BF0C1C /* ScoreTableViewCell.xib in Resources */,
@@ -440,6 +466,7 @@
 				B4CD84531D09E30C00DAC959 /* XPathQuery.m in Sources */,
 				B4B0F7E31D0C4FCF00BF0C1C /* ScoreTableViewCell.m in Sources */,
 				B4CD84511D09E30C00DAC959 /* TFHpple.m in Sources */,
+				B493F92D1D0D2CE100C3F1F1 /* ClassTableViewCell.m in Sources */,
 				B4B0F7DF1D0C49EB00BF0C1C /* ScoreViewController.m in Sources */,
 				B4CD844A1D09D3BE00DAC959 /* LoginSuccessViewController.m in Sources */,
 				B418B6901D02625900E16A85 /* ViewController.m in Sources */,
@@ -587,6 +614,8 @@
 			baseConfigurationReference = 335D31BABF97FED535F92CB2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EXCLUDED_SOURCE_FILE_NAMES = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,6 +637,8 @@
 			baseConfigurationReference = E7ABD8D3F744E81F2D692227 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chenguang Ding (VC58Q8KGG5)";
 				EXCLUDED_SOURCE_FILE_NAMES = "FLEX*";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

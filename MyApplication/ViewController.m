@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "TFHpple.h"
 #import "LoginSuccessViewController.h"
-@interface ViewController ()<UITextFieldDelegate>
-
+#import "MBProgressHUD.h"
+@interface ViewController ()<UITextFieldDelegate,MBProgressHUDDelegate> {
+    MBProgressHUD *HUD;
+}
 @end
 
 @implementation ViewController
@@ -27,7 +29,7 @@
     //    navbar字体白色
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor whiteColor]}];
     // 设置登录按钮action
-    [_login addTarget:self action:@selector(loginaction ) forControlEvents:UIControlEventTouchDown];
+    [_login addTarget:self action:@selector(starButtonClicked:) forControlEvents:UIControlEventTouchDown];
     // 设置返回按钮
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
@@ -53,12 +55,24 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)starButtonClicked:(id)sender
+{
+    HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    [self.navigationController.view addSubview:HUD];
+    
+    // Set the hud to display with a color
+    HUD.color = [UIColor colorWithRed:0.23 green:0.50 blue:0.82 alpha:0.90];
+    
+    HUD.delegate = self;
+    [HUD showWhileExecuting:@selector(loginaction) onTarget:self withObject:nil animated:YES];
+
+}
+
 #pragma 用户登录
 - (void) loginaction{
     [self userLoginwithusername:nil password:nil];
 }
 - (void)userLoginwithusername:(NSString*)uname password:(NSString*)pass{
-    
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: nil delegateQueue: [NSOperationQueue mainQueue]];
     NSURL *URL=[NSURL URLWithString:@"http://www.ycjw.zjut.edu.cn/logon.aspx"];//登录模块
@@ -108,12 +122,6 @@
         }
         
         else {
-            UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"提示"
-                                                         message:@"登录成功"
-                                                        delegate:nil
-                                               cancelButtonTitle:@"确认"
-                                               otherButtonTitles:nil];
-            [alt show];
             //        NSLog(@"%@",logData);
             NSData *endata = [logData dataUsingEncoding:NSUTF8StringEncoding];
             TFHpple *doc = [[TFHpple alloc] initWithHTMLData:endata];
@@ -136,6 +144,7 @@
         }
     }];
     [dataRequesting resume];
+    
 }
 
 @end

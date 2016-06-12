@@ -18,15 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 #if DEBUG
     [[FLEXManager sharedManager] showExplorer];
 #endif
     // Override point for customization after application launch.
     [NSThread sleepForTimeInterval:2.0];
-    UINavigationController *mainNav = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateInitialViewController];
-    self.window.rootViewController = mainNav;
-    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

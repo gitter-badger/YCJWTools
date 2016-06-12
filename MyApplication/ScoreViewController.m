@@ -8,7 +8,7 @@
 
 #import "ScoreViewController.h"
 #import "ScoreTableViewCell.h"
-
+#import <Social/Social.h>
 @interface ScoreViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     float allscore;
@@ -26,7 +26,42 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
+#pragma 分享新浪微博
+- (void) share{
+    // 首先判断服务器是否可以访问
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeSinaWeibo]) {
+        
+        // 使用SLServiceTypeSinaWeibo来创建一个新浪微博view Controller
+        SLComposeViewController *socialVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeSinaWeibo];
+        
+        // 写一个bolck，用于completionHandler的初始化
+        SLComposeViewControllerCompletionHandler myBlock = ^(SLComposeViewControllerResult result) {
+            if (result == SLComposeViewControllerResultCancelled) {
+                
+            }
+            else
+            {
+                
+            }
+            [socialVC dismissViewControllerAnimated:YES completion:Nil];
+        };
+        socialVC.completionHandler = myBlock;
+        [socialVC setInitialText:[NSString stringWithFormat:@"%@ 正在通过原创教务app查询他的成绩\n 他本学期绩点：%.3f",self.username,allscore?(allscore/ave-50)/10:0]];
+        
+        
+        // 以模态的方式展现view controller
+        [self presentViewController:socialVC animated:YES completion:Nil];
+        
+    } else {
+        UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"注意"
+                                                     message:@"您还未绑定新浪微博，请在系统设置中设置"
+                                                    delegate:nil
+                                           cancelButtonTitle:@"确认"
+                                           otherButtonTitles:nil];
+        [alt show];
+        
+    }
+}
 #pragma 界面设置
 - (void) initview{
     self.title = @"成绩查询";
@@ -38,6 +73,8 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
+    UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithTitle:@"微博分享" style:UIBarButtonItemStylePlain target:self action:@selector(share)];
+    self.navigationItem.rightBarButtonItem = share;
     
 }
 
@@ -103,7 +140,7 @@
     NSString *proper = [[_scorearr objectAtIndex:indexPath.row+1] objectForKey:@"考试性质"];
     NSString *score = [[_scorearr objectAtIndex:indexPath.row+1] objectForKey:@"成绩"];
     NSString *time = [[_scorearr objectAtIndex:indexPath.row+1] objectForKey:@"学时"];
-     NSString *sscore = [[_scorearr objectAtIndex:indexPath.row+1] objectForKey:@"学分"];
+    NSString *sscore = [[_scorearr objectAtIndex:indexPath.row+1] objectForKey:@"学分"];
     UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"详情"
                                                  message:[NSString stringWithFormat:@"实际学期：%@\n执行课程名称：%@\n考试性质：%@\n成绩：%@\n学时：%@\n学分：%@",term,name,proper,score,time,sscore]
                                                 delegate:nil
@@ -111,8 +148,10 @@
                                        otherButtonTitles:nil];
     [alt show];
     [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow]  animated:YES];
-
+    
 }
+
+
 /*
  #pragma mark - Navigation
  

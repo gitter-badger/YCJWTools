@@ -10,8 +10,10 @@
 #import "TFHpple.h"
 #import "ScoreViewController.h"
 #import "CourseViewController.h"
-@interface LoginSuccessViewController ()<UIPickerViewDelegate,UIPickerViewDataSource>
+#import "MBProgressHUD.h"
+@interface LoginSuccessViewController ()<UIPickerViewDelegate,UIPickerViewDataSource,MBProgressHUDDelegate>
 {
+    MBProgressHUD *HUD;
     NSMutableArray *courses;
     NSMutableArray *scores;
     NSArray *yeararr;
@@ -54,7 +56,7 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
-
+    
 }
 - (void) logout{
     NSArray *sandboxpath= NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -67,6 +69,22 @@
 }
 
 - (void) getClass{
+    HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    [self.navigationController.view addSubview:HUD];
+    
+    // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
+    // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+    
+    // Set custom view mode
+    HUD.mode = MBProgressHUDModeCustomView;
+    
+    HUD.delegate = self;
+    HUD.labelText = @"查询中";
+    
+    [HUD show:YES];
+    
+    
     // 1.设置请求路径
     NSURL *URL=[NSURL URLWithString:@"http://www.ycjw.zjut.edu.cn//stdgl/cxxt/Web_Std_XQKB.aspx"];//不需要传递参数
     
@@ -91,65 +109,134 @@
     
     
     NSURLSessionDataTask * dataRequesting =[self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
+        if (connectionError)
+        {
+            UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"错误提示"
+                                                         message:connectionError.localizedDescription
+                                                        delegate:nil
+                                               cancelButtonTitle:@"确认"
+                                               otherButtonTitles:nil];
+            [alt show];
+            return;
+            
+        }
+        
         NSString *strData = [[NSString alloc] initWithData:data encoding:enc];
         NSData *endata = [strData dataUsingEncoding:NSUTF8StringEncoding];
         TFHpple *doc = [[TFHpple alloc] initWithHTMLData:endata];
         NSArray *elements = [doc searchWithXPathQuery:@"//table[@class='style6']"];
-        TFHppleElement *element = [elements objectAtIndex:0];
-        NSMutableArray *courseLast = [[NSMutableArray alloc]init];
-        courses = [[NSMutableArray alloc]init];
-        for (int i = 1; i<=8; i++) {
-            NSArray *course = [element searchWithXPathQuery:[NSString stringWithFormat:@"//tr//td[@rowspan='%d']",i]];
-            [courseLast addObject:course];
-        }
-        int cost = 0;
-        for (NSArray *obj in courseLast ) {
-            if (obj.count!=0) {
-                for (TFHppleElement *courseEle in obj) {
-                    NSArray *courseName = [courseEle searchWithXPathQuery:@"//span"];
-                    
-                    TFHppleElement *temp = [courseName objectAtIndex:0];
-                    
-                    NSString *courseInfo=[temp content];
-                    
-                    NSDictionary *attr = [temp attributes];
-                    
-                    NSString *time = [attr objectForKey:@"id"];
-                    
-                    NSArray *timeinfo = [time componentsSeparatedByString:@"_"];
-                    
-                    NSArray *arr = [courseInfo componentsSeparatedByString:@"/"];
-                    
-                    NSString *pureNumbers = [[timeinfo[3] componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet]] componentsJoinedByString:@""];
-                    
-                    NSInteger end = [pureNumbers integerValue];
-                    
-                    NSInteger start = end - cost;
-                    
-                    NSString *starttimeValue = [NSString stringWithFormat:@"%ld",(long)start];
-                    NSDictionary *dic ;
-                    if (arr.count ==4) {
-                        dic = [NSDictionary dictionaryWithObjectsAndKeys:arr[0],@"课程",arr[1],@"时间地点",arr[2],@"地点",arr[3],@"老师",timeinfo[4],@"上课星期",pureNumbers,@"停止时间",starttimeValue,@"开始时间",   nil];
+        if ([elements count]) {
+
+            TFHppleElement *element = [elements objectAtIndex:0];
+            
+            NSMutableArray *courseLast = [[NSMutableArray alloc]init];
+            courses = [[NSMutableArray alloc]init];
+            //        NSArray *course = [element searchWithXPathQuery:@"//tr//td"];
+            //        [courseLast addObject:course];
+            for (int i = 1; i<=8; i++) {
+                NSArray *course = [element searchWithXPathQuery:[NSString stringWithFormat:@"//tr//td[@rowspan='%d']",i]];
+                [courseLast addObject:course];
+            }
+            NSArray *courseall = [element searchWithXPathQuery:@"//tr//td"];
+            for (int i = 0 ; i<[courseall count]; i++) {
+                TFHppleElement *temp = [courseall objectAtIndex:i];
+                NSString *a = [[temp attributes]objectForKey:@"rowspan"];
+                NSArray *b = [temp searchWithXPathQuery:@"//span"];
+                if ([b count]&&a==nil) {
+                    TFHppleElement *isExit =  [b objectAtIndex:0];
+                    if (![[isExit content] isEqualToString:@""]&&![[isExit content]containsString:@"第"]) {
+                        [[courseLast objectAtIndex:0]addObject:temp];
                     }
-                    else if (arr.count ==3 )
-                    {
-                        dic = [NSDictionary dictionaryWithObjectsAndKeys:arr[0],@"课程",@"",@"时间地点",arr[1],@"地点",arr[2],@"老师",timeinfo[4],@"上课星期",pureNumbers,@"停止时间",starttimeValue,@"开始时间",   nil];
-                    }else{
-                        dic = [NSDictionary dictionaryWithObjectsAndKeys:arr[0],@"课程",@"",@"时间地点",arr[1],@"地点",@"",@"老师",timeinfo[4],@"上课星期",pureNumbers,@"停止时间",starttimeValue,@"开始时间",   nil];
-                    }
-                    
-                    
-                    [courses addObject:dic];
-                    
-                    NSLog(@"%@",[dic objectForKey:@"开始时间"]);
                 }
-            }else{
+                //            if (!&&[[[temp searchWithXPathQuery:@"//span"]objectAtIndex:0]content]!=nil) {
+                //                [[courseLast objectAtIndex:0]addObject:temp];
+                //            }
+            }
+            
+            int cost = 0;
+            for (NSArray *obj in courseLast ) {
+                if (obj.count!=0) {
+                    for (TFHppleElement *courseEle in obj) {
+                        NSArray *courseName = [courseEle searchWithXPathQuery:@"//span"];
+                        
+                        TFHppleElement *temp = [courseName objectAtIndex:0];
+                        
+                        NSString *courseInfo=[temp content];
+                        
+                        NSDictionary *attr = [temp attributes];
+                        
+                        NSString *time = [attr objectForKey:@"id"];
+                        
+                        NSArray *timeinfo = [time componentsSeparatedByString:@"_"];
+                        
+                        NSArray *arr = [courseInfo componentsSeparatedByString:@"/"];
+                        
+                        NSString *pureNumbers = [[timeinfo[3] componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet]] componentsJoinedByString:@""];
+                        
+                        NSInteger end = [pureNumbers integerValue];
+                        
+                        if (cost == 0) {
+                            end = end - 1;
+                            pureNumbers = [NSString stringWithFormat:@"%ld",(long)end];
+                        }
+                        
+                        
+                        NSInteger start = end - cost;
+                        
+                        NSString *starttimeValue = [NSString stringWithFormat:@"%ld",(long)start];
+                        NSDictionary *dic ;
+                        
+                        NSString *placeandtime = [NSString stringWithFormat:@"%@第%@~%@节",arr[1],starttimeValue,pureNumbers];
+                        if (arr.count ==4) {
+                            dic = [NSDictionary dictionaryWithObjectsAndKeys:arr[0],@"课程",placeandtime,@"时间地点",arr[2],@"地点",arr[3],@"老师",[[timeinfo[4] componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet]] componentsJoinedByString:@""],@"上课星期",pureNumbers,@"停止时间",starttimeValue,@"开始时间",   nil];
+                        }
+                        else if (arr.count ==3 )
+                        {
+                            dic = [NSDictionary dictionaryWithObjectsAndKeys:arr[0],@"课程",placeandtime,@"时间地点",@"",@"地点",arr[2],@"老师",[[timeinfo[4] componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet]] componentsJoinedByString:@""],@"上课星期",pureNumbers,@"停止时间",starttimeValue,@"开始时间",   nil];
+                        }else{
+                            dic = [NSDictionary dictionaryWithObjectsAndKeys:arr[0],@"课程",placeandtime,@"时间地点",@"",@"地点",@"",@"老师",[[timeinfo[4] componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet]] componentsJoinedByString:@""],@"上课星期",pureNumbers,@"停止时间",starttimeValue,@"开始时间",   nil];
+                        }
+                        if ([courses count]) {
+                            NSString *obj1 = [[courses objectAtIndex:0]objectForKey:@"停止时间"];
+                            if (pureNumbers.intValue < obj1.intValue) {
+                                [courses insertObject:dic atIndex:0];
+                            }else{
+                                [courses addObject:dic];
+                            }
+                        }else{
+                            [courses addObject:dic];
+                        }
+                        
+                    }
+                    
+                }
                 cost++;
             }
+            
+            CourseViewController *lvc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"Course"];
+            lvc.coursearr = courses;
+            [HUD hide:YES afterDelay:2];
+            [self.navigationController pushViewController:lvc animated:YES];
+        }else{
+            [HUD hide:YES];
+            HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+            [self.navigationController.view addSubview:HUD];
+            
+            // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
+            // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
+            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+            
+            // Set custom view mode
+            HUD.mode = MBProgressHUDModeCustomView;
+            
+            HUD.delegate = self;
+
+
+            HUD.labelText = @"没有该学期的课程信息";
+            
+            [HUD show:YES];
+             [HUD hide:YES afterDelay:2];
         }
-        
-        CourseViewController *lvc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"Course"];
-        [self.navigationController pushViewController:lvc animated:YES];
     }];
     [dataRequesting resume];
     
@@ -157,6 +244,20 @@
 
 
 - (void) getscore{
+    HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    [self.navigationController.view addSubview:HUD];
+    
+    // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
+    // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+    
+    // Set custom view mode
+    HUD.mode = MBProgressHUDModeCustomView;
+    
+    HUD.delegate = self;
+    HUD.labelText = @"查询成功";
+    
+    [HUD show:YES];
     
     NSURL *URL=[NSURL URLWithString:@"http://www.ycjw.zjut.edu.cn//stdgl/cxxt/cjcx/Cjcx_Xsgrcj.aspx"];
     NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:URL];
@@ -174,6 +275,18 @@
     request.HTTPBody=[req dataUsingEncoding:enc];
     [request setValue:@"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:33.0) Gecko/20100101 Firefox/33.0" forHTTPHeaderField:@"User-Agent"];
     NSURLSessionDataTask * dataRequesing =[self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
+        if (connectionError)
+        {
+            UIAlertView *alt = [[UIAlertView alloc]initWithTitle:@"错误提示"
+                                                         message:connectionError.localizedDescription
+                                                        delegate:nil
+                                               cancelButtonTitle:@"确认"
+                                               otherButtonTitles:nil];
+            [alt show];
+            return;
+            
+        }
+        
         NSString *strData = [[NSString alloc] initWithData:data encoding:enc];
         NSData *endata = [strData dataUsingEncoding:NSUTF8StringEncoding];
         TFHpple *doc = [[TFHpple alloc] initWithHTMLData:endata];
@@ -201,6 +314,7 @@
         ScoreViewController *lvc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"Score"];
         lvc.scorearr = scores;
         lvc.username = names;
+        [HUD hide:YES afterDelay:2];
         [self.navigationController pushViewController:lvc animated:YES];
     }];
     [dataRequesing resume];
@@ -231,7 +345,7 @@
     UILabel *label = [[UILabel alloc] init];
     label.text=[self pickerView:pickerView titleForRow:row forComponent:component];
     label.textColor = [UIColor whiteColor];
-     [label setTextAlignment:NSTextAlignmentCenter];
+    [label setTextAlignment:NSTextAlignmentCenter];
     return label;
 }
 /*

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CourseViewController : UIViewController
-
+@property (nonatomic) NSMutableArray *coursearr;
 @end
