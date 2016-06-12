@@ -24,6 +24,9 @@
 #endif
     // Override point for customization after application launch.
     [NSThread sleepForTimeInterval:2.0];
+    UINavigationController *mainNav = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateInitialViewController];
+    self.window.rootViewController = mainNav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -48,5 +51,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end

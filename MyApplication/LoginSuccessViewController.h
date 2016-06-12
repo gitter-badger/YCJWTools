@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *info;
 @property (weak, nonatomic) IBOutlet UIButton *score;
 @property (weak, nonatomic) IBOutlet UIButton *classtable;
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
 @property (nonatomic) NSString *uinfo;
 @property (nonatomic) NSURLSession *session;
 @end

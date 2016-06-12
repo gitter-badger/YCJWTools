@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcbb4bbe-14a4-4ea0-b495-5888820394a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ClassTable.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ClassTable.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ScoreView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ScoreView.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ScoreTableViewCell.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ScoreTableViewCell.xib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyApplication/ScoreViewController.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyApplication/ScoreView.h" afterPath="$PROJECT_DIR$/MyApplication/ScoreViewController.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyApplication/ScoreView.m" afterPath="$PROJECT_DIR$/MyApplication/ScoreTableViewCell.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyApplication.iml" afterPath="$PROJECT_DIR$/.idea/MyApplication.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyApplication.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/MyApplication.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyApplication/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/MyApplication/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyApplication/LoginSuccessViewController.h" afterPath="$PROJECT_DIR$/MyApplication/LoginSuccessViewController.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m" afterPath="$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyApplication/ViewController.m" afterPath="$PROJECT_DIR$/MyApplication/ViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/Dwight.xcuserdatad/xcschemes/FLEX.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/Dwight.xcuserdatad/xcschemes/FLEX.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/Dwight.xcuserdatad/xcschemes/MMDrawerController.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/Dwight.xcuserdatad/xcschemes/MMDrawerController.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/Dwight.xcuserdatad/xcschemes/Pods.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/Dwight.xcuserdatad/xcschemes/Pods.xcscheme" />
     </list>
     <ignored path="MyApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,20 +39,32 @@
       <file leaf-file-name="ViewController.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+            <state relative-caret-position="425">
+              <caret line="92" column="41" selection-start-line="90" selection-start-column="11" selection-end-line="93" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginSuccessViewController.m" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginSuccessViewController.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1878">
-              <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
+            <state relative-caret-position="320">
+              <caret line="159" column="95" selection-start-line="159" selection-start-column="93" selection-end-line="159" selection-end-column="95" />
               <folding>
-                <marker date="1465650084000" expanded="true" signature="19258:19260" ph="/.../" />
+                <element signature="e#158#196#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScoreViewController.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyApplication/ScoreViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="e#151#182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,6 +80,7 @@
       <list>
         <option value="$PROJECT_DIR$/MyApplication/ViewController.m" />
         <option value="$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m" />
+        <option value="$PROJECT_DIR$/MyApplication/ScoreViewController.m" />
       </list>
     </option>
   </component>
@@ -105,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -121,6 +138,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="MyApplication" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyApplication" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyApplication" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -157,7 +192,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,8 +241,32 @@
       </EXTENSION>
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="FLEX" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="FLEX" CONFIG_NAME="Debug" SCHEME_NAME="FLEX" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="MMDrawerController" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="MMDrawerController" CONFIG_NAME="Debug" SCHEME_NAME="MMDrawerController" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods" CONFIG_NAME="Debug" SCHEME_NAME="Pods" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.MyApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Application.FLEX" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MMDrawerController" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Pods" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -229,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1465498063592</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="获取数据&#10;">
+      <created>1465650117475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1465650117475</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -243,14 +308,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1401" height="877" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -278,7 +343,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新了一些功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了一些功能" />
+    <MESSAGE value="获取数据&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取数据&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -287,6 +353,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#158#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -300,7 +384,7 @@
         <state relative-caret-position="1050">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
-            <marker date="1465650084000" expanded="true" signature="19258:19260" ph="/.../" />
+            <element signature="e#158#196#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -318,7 +402,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1465650084000" expanded="true" signature="19258:19260" ph="/.../" />
+            <element signature="e#158#196#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -349,18 +433,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyApplication/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        <state relative-caret-position="425">
+          <caret line="92" column="41" selection-start-line="90" selection-start-column="11" selection-end-line="93" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyApplication/LoginSuccessViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1878">
-          <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
+        <state relative-caret-position="320">
+          <caret line="159" column="95" selection-start-line="159" selection-start-column="93" selection-end-line="159" selection-end-column="95" />
           <folding>
-            <marker date="1465650084000" expanded="true" signature="19258:19260" ph="/.../" />
+            <element signature="e#158#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyApplication/ScoreViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#151#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
