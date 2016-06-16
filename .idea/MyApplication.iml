@@ -14,54 +14,43 @@
       <sourceFolder url="file://$MODULE_DIR$/MyApplicationUITests/MyApplicationUITests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplicationUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/LoginSuccessViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/AppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ScoreTableViewCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/XPathQuery.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/TFHpple.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ClassTable.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/ScoreTableViewCell.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/TFHpple.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ClassTable.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/CourseViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ClassTableViewCell.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/TFHpple.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/CourseViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ClassTableViewCell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ScoreViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/ScoreTableViewCell.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ScoreTableViewCell.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/year.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ClassTableViewCell.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/LoginSuccessViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ScoreViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/ViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/TFHppleElement.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/ScoreViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MyApplication/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/TFHppleElement.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/LoginSuccessViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyApplication/TFHppleElement.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/AppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyApplication/XPathQuery.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FLEX/FLEX.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FLEX/FLEX-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FLEX/FLEX-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MMDrawerController/MMDrawerController-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MMDrawerController/MMDrawerController.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MMDrawerController/MMDrawerController-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-resources.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-frameworks.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.release.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.debug.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/FLEX.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXInstancesTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserFileOperationController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXLiveObjectsTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXGlobalsTableViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXClassesTableViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXWebViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXGlobalsTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXClassesTableViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXWebViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXCookiesTableViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXLibrariesTableViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserSearchOperation.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewCell.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogMessage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewController.m" isTestSource="false" />
@@ -70,61 +59,63 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXCookiesTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXLibrariesTableViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserTableViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXClassesTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserSearchOperation.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXWebViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXInstancesTableViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserFileOperationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserSearchOperation.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXLiveObjectsTableViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransactionDetailTableViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserFileOperationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/GlobalStateExplorers/FLEXFileBrowserTableViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkRecorder.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransaction.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/PonyDebugger/FLEXNetworkObserver.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/PonyDebugger/FLEXNetworkObserver.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransactionDetailTableViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransactionTableViewCell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransactionDetailTableViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkSettingsTableViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkHistoryTableViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkRecorder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransactionTableViewCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkSettingsTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkRecorder.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransaction.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransactionTableViewCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkHistoryTableViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Network/FLEXNetworkTransactionTableViewCell.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXManager+Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXManager.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXWindow.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXToolbarItem.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXExplorerViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXWindow.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXToolbarItem.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXExplorerToolbar.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXManager.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXToolbarItem.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ExplorerToolbar/FLEXExplorerToolbar.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXDefaultsExplorerViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXDictionaryExplorerViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXViewExplorerViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXSetExplorerViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXClassExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXDefaultsExplorerViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXLayerExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXArrayExplorerViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXImageExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXClassExplorerViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXLayerExplorerViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXViewExplorerViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXDictionaryExplorerViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXImageExplorerViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXViewControllerExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXDictionaryExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXViewControllerExplorerViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXArrayExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXObjectExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXGlobalsTableViewControllerEntry.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXObjectExplorerFactory.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXImageExplorerViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXDefaultsExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXObjectExplorerViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXGlobalsTableViewControllerEntry.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXObjectExplorerFactory.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXArrayExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXObjectExplorerFactory.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXImageExplorerViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXGlobalsTableViewControllerEntry.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ObjectExplorers/FLEXSetExplorerViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ViewHierarchy/FLEXHierarchyTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ViewHierarchy/FLEXHierarchyTableViewCell.h" isTestSource="false" />
@@ -133,42 +124,42 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ViewHierarchy/FLEXImagePreviewViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/ViewHierarchy/FLEXHierarchyTableViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXMethodCallingViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXIvarEditorViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputTextView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXFieldEditorView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputStringView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputNotSupportedView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontsPickerView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputNumberView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputStringView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputTextView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontsPickerView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputJSONObjectView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputViewFactory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputDateView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputStructView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputJSONObjectView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputSwitchView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputDateView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputSwitchView.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputNotSupportedView.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputColorView.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputStringView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputViewFactory.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputStructView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontsPickerView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputColorView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputJSONObjectView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputTextView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputViewFactory.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputColorView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputColorView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputNotSupportedView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputStructView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/ArgumentInputViews/FLEXArgumentInputNumberView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXMethodCallingViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXDefaultEditorViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXFieldEditorViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXFieldEditorView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXPropertyEditorViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXDefaultEditorViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXFieldEditorView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXFieldEditorViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXMethodCallingViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXPropertyEditorViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXIvarEditorViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXDefaultEditorViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXIvarEditorViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Editing/FLEXFieldEditorViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Utility/FLEXHeapEnumerator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Utility/FLEXKeyboardShortcutManager.m" isTestSource="false" />
@@ -184,11 +175,29 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Utility/FLEXResources.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Utility/FLEXUtility.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/FLEX/Classes/Utility/FLEXHeapEnumerator.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MBProgressHUD/MBProgressHUD.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MBProgressHUD/MBProgressHUD.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBProgressHUD/MBProgressHUD.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FLEX/FLEX.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FLEX/FLEX-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FLEX/FLEX-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MMDrawerController/MMDrawerController-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MMDrawerController/MMDrawerController-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MMDrawerController/MMDrawerController.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods/Pods-acknowledgements.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/MMDrawerBarButtonItem.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/MMDrawerController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/MMDrawerVisualState.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/MMDrawerBarButtonItem.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/UIViewController+MMDrawerController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/MMDrawerBarButtonItem.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/MMDrawerVisualState.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/MMDrawerController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/MMDrawerController+Subclass.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MMDrawerController/MMDrawerController/UIViewController+MMDrawerController.m" isTestSource="false" />

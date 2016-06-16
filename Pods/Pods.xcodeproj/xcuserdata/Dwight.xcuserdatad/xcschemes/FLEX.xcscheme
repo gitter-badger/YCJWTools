@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AF2CBB4878F40B79078A0E94'
-               BlueprintName = 'FLEX'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libFLEX.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BEC7E98BAFBBCDA06DDA8DC48ED5231D"
+               BlueprintName = "FLEX"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libFLEX.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
